@@ -4,12 +4,16 @@ public class Heroe implements Comparable<Heroe> {
     private String raza;
     private int nivelPoder;
     private String habilidad;
+    private double nv;
 
     public Heroe(String nombre, String raza, int nivelPoder, String habilidad) {
         this.nombre = nombre;
         this.raza = raza;
         this.nivelPoder = nivelPoder;
         this.habilidad = habilidad;
+    }
+
+    public Heroe() {
     }
 
     public String getNombre() {
@@ -42,6 +46,29 @@ public class Heroe implements Comparable<Heroe> {
 
     public void setHabilidad(String habilidad) {
         this.habilidad = habilidad;
+    }
+
+    public double aumentoPoder(){
+        if(raza == "mutante"){
+
+            nv= nivelPoder*1.3;
+
+            System.out.printf("El nivel de poder del mutante es: "+nv);
+
+        } return nv;
+
+
+
+    }
+
+    public double aumentoPoder2(){
+        if(raza == "alien"){
+
+            nv= nivelPoder*1.3;
+
+            System.out.printf("El nivel de poder del alien es: "+nv);
+
+        } return nv;
     }
 
     @Override
