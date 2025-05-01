@@ -1,4 +1,4 @@
-public class Heroe {
+public class Heroe implements Comparable<Heroe> {
 
     private String nombre;
     private String raza;
@@ -43,4 +43,14 @@ public class Heroe {
     public void setHabilidad(String habilidad) {
         this.habilidad = habilidad;
     }
+
+    @Override
+    public int compareTo(Heroe other) {
+        int sumThis = this.nivelPoder;
+        int sumOther = other.nivelPoder;
+        return Integer.compare(sumThis, sumOther);
+    }
+
+
+
 }
