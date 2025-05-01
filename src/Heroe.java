@@ -51,7 +51,7 @@ public class Heroe implements Comparable<Heroe> {
     public double aumentoPoder(){
         if(raza == "mutante"){
 
-            nv= nivelPoder*1.3;
+            nv= getNivelPoder()*1.3;
 
             System.out.printf("El nivel de poder del mutante es: "+nv);
 
@@ -64,7 +64,7 @@ public class Heroe implements Comparable<Heroe> {
     public double aumentoPoder2(){
         if(raza == "alien"){
 
-            nv= nivelPoder*1.3;
+            nv= getNivelPoder()*1.3;
 
             System.out.printf("El nivel de poder del alien es: "+nv);
 
@@ -77,6 +77,8 @@ public class Heroe implements Comparable<Heroe> {
         int sumOther = other.nivelPoder;
         return Integer.compare(sumThis, sumOther);
     }
+
+
 
 
 
