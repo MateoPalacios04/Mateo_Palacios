@@ -13,7 +13,9 @@ public class Heroe implements Comparable<Heroe> {
         this.habilidad = habilidad;
     }
 
-    public Heroe() {
+
+
+    public Heroe(String nombre, String raza, String habilidad, String np) {
     }
 
     public String getNombre() {
